@@ -3,8 +3,8 @@
 *********************Polarization Measure Example*******************************
 ********************************************************************************
 ********************************************************************************
-
-
+cd "YOUR CURRENT DIRECTORY GOES HERE"
+use "polarexampledata", clear //Add "13" to file if using STATA 13 and "Old" if using 11/12 
 bysort cwc: egen ProC=mean(F120) //Generates country level mean values of whether abortion is ever justifiable
 **cwc is country-wave code, i.e. level 2 unit identifier
 *gen MEAS=round(VARIABLE,.1) // Not necessary since F120 is 10 point ordinal scale
